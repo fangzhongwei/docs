@@ -9,4 +9,7 @@ src_managed/
 project/boot/
 .history
 .cache
-
+docs.iml
+docs.ipr
+docs.iws
+.idea
