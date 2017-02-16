@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "com.jxjxgo.edcenter.domain.cache";
+
+message EncryptedData {
+    string ticket = 1;
+	string hash = 2;
+    string encryptType = 3;
+    string encryptKey = 4;
+    string encryptData = 5;
+	int32 encryptVersion = 6;
+}

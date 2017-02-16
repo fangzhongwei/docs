@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "com.jxjxgo.gamegateway.domain.ws.req";
+
+message SocketRequest {
+    string p1 = 1;
+	string p2 = 2;
+    string p3 = 3;
+    string p4 = 4;
+    string p5 = 5;
+    string p6 = 6;
+    string p7 = 7;
+    string p8 = 8;
+    string p9 = 9;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "com.jxjxgo.gamecenter.domain.mq";
+message JoinGameMessage {
+    string traceId = 1;
+	int64 socketId = 2;
+    int64 ip = 3;
+    int32 deviceType = 4;
+	string fingerPrint = 5;
+	int64 memberId = 6;
+    int32 gameType = 7;
+	int32 baseAmount = 8;
+}
