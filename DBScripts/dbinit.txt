@@ -1,0 +1,50 @@
+#careat user
+create user account with password 'account';
+create user sso with password 'sso';
+create user edcenter with password 'edcenter';
+create user i18n with password 'i18n';
+create user member with password 'member';
+create user sms with password 'sms';
+create user landlord with password 'landlord';
+
+#careat db
+CREATE DATABASE sso WITH ENCODING = 'UTF8';  
+CREATE DATABASE account WITH ENCODING = 'UTF8';  
+CREATE DATABASE edcenter WITH ENCODING = 'UTF8';  
+CREATE DATABASE i18n WITH ENCODING = 'UTF8';  
+CREATE DATABASE member WITH ENCODING = 'UTF8';  
+CREATE DATABASE sms WITH ENCODING = 'UTF8';  
+CREATE DATABASE landlord WITH ENCODING = 'UTF8';  
+
+#grant
+\c account;
+GRANT SELECT,INSERT,UPDATE on all tables in schema public to account;
+\c sso;
+GRANT SELECT,INSERT,UPDATE on all tables in schema public to sso;
+\c edcenter;
+GRANT SELECT,INSERT,UPDATE on all tables in schema public to edcenter;
+\c i18n;
+GRANT SELECT,INSERT,UPDATE on all tables in schema public to i18n;
+\c member;
+GRANT SELECT,INSERT,UPDATE on all tables in schema public to member;
+\c sms;
+GRANT SELECT,INSERT,UPDATE on all tables in schema public to sms;
+\c landlord;
+GRANT SELECT,INSERT,UPDATE on all tables in schema public to landlord;
+
+
+#init tables
+\c account;
+\i account.sql;
+\c sso;
+\i sso.sql;
+\c edcenter;
+\i edcenter.sql;
+\c i18n;
+\i i18n.sql;
+\c member;
+\i member.sql;
+\c sms;
+\i sms.sql;
+\c landlord;
+\i landlord.sql;
