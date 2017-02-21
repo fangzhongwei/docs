@@ -18,7 +18,6 @@ Date: 2017-02-17 02:35:13
 -- ----------------------------
 -- Sequence structure for seq_account_id
 -- ----------------------------
-DROP SEQUENCE IF EXISTS "public"."seq_account_id";
 CREATE SEQUENCE "public"."seq_account_id"
  INCREMENT 1
  MINVALUE 1
@@ -29,7 +28,6 @@ CREATE SEQUENCE "public"."seq_account_id"
 -- ----------------------------
 -- Sequence structure for seq_order_id
 -- ----------------------------
-DROP SEQUENCE IF EXISTS "public"."seq_order_id";
 CREATE SEQUENCE "public"."seq_order_id"
  INCREMENT 1
  MINVALUE 1
@@ -40,7 +38,6 @@ CREATE SEQUENCE "public"."seq_order_id"
 -- ----------------------------
 -- Table structure for t_account_order
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."t_account_order";
 CREATE TABLE "public"."t_account_order" (
 "account_order_no" varchar(64) COLLATE "default" NOT NULL,
 "payment_voucher_no" varchar(64) COLLATE "default" NOT NULL,
@@ -62,7 +59,6 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for t_payment_order
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."t_payment_order";
 CREATE TABLE "public"."t_payment_order" (
 "payment_voucher_no" varchar(64) COLLATE "default" NOT NULL,
 "account_order_no" varchar(64) COLLATE "default" NOT NULL,
@@ -82,7 +78,6 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_channel
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_channel";
 CREATE TABLE "public"."tm_channel" (
 "id" int4 NOT NULL,
 "code" varchar(32) COLLATE "default" NOT NULL,
@@ -100,7 +95,6 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_diamod_price
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_diamod_price";
 CREATE TABLE "public"."tm_diamod_price" (
 "id" int4 NOT NULL,
 "code" varchar(32) COLLATE "default" NOT NULL,
@@ -118,7 +112,6 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_diamond_account
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_diamond_account";
 CREATE TABLE "public"."tm_diamond_account" (
 "account_id" int8 NOT NULL,
 "member_id" int8 NOT NULL,

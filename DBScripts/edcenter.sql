@@ -18,7 +18,6 @@ Date: 2017-02-17 02:36:05
 -- ----------------------------
 -- Sequence structure for seq_ticket_id
 -- ----------------------------
-DROP SEQUENCE IF EXISTS "public"."seq_ticket_id";
 CREATE SEQUENCE "public"."seq_ticket_id"
  INCREMENT 1
  MINVALUE 1
@@ -30,7 +29,6 @@ SELECT setval('"public"."seq_ticket_id"', 1, true);
 -- ----------------------------
 -- Table structure for tm_encrypted_data
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_encrypted_data";
 CREATE TABLE "public"."tm_encrypted_data" (
 "ticket" varchar(16) COLLATE "default" NOT NULL,
 "hash" varchar(64) COLLATE "default" NOT NULL,

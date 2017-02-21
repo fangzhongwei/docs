@@ -18,7 +18,6 @@ Date: 2017-02-17 02:37:14
 -- ----------------------------
 -- Table structure for tm_sms_verify_aggregation
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_sms_verify_aggregation";
 CREATE TABLE "public"."tm_sms_verify_aggregation" (
 "id" int8 NOT NULL,
 "send_date" varchar(10) COLLATE "default" NOT NULL,
@@ -39,7 +38,6 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_sms_verify_record
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_sms_verify_record";
 CREATE TABLE "public"."tm_sms_verify_record" (
 "id" int8 NOT NULL,
 "member_id" int8 NOT NULL,
@@ -72,7 +70,6 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_sms_verify_template
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_sms_verify_template";
 CREATE TABLE "public"."tm_sms_verify_template" (
 "sms_type" int4 NOT NULL,
 "min_interval_seconds" int4 NOT NULL,

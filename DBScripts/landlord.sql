@@ -18,7 +18,6 @@ Date: 2017-02-17 02:37:46
 -- ----------------------------
 -- Sequence structure for seq_game_id
 -- ----------------------------
-DROP SEQUENCE IF EXISTS "public"."seq_game_id";
 CREATE SEQUENCE "public"."seq_game_id"
  INCREMENT 1
  MINVALUE 1
@@ -29,7 +28,6 @@ CREATE SEQUENCE "public"."seq_game_id"
 -- ----------------------------
 -- Sequence structure for seq_play_cards_id
 -- ----------------------------
-DROP SEQUENCE IF EXISTS "public"."seq_play_cards_id";
 CREATE SEQUENCE "public"."seq_play_cards_id"
  INCREMENT 1
  MINVALUE 1
@@ -40,7 +38,6 @@ CREATE SEQUENCE "public"."seq_play_cards_id"
 -- ----------------------------
 -- Sequence structure for seq_socket_id
 -- ----------------------------
-DROP SEQUENCE IF EXISTS "public"."seq_socket_id";
 CREATE SEQUENCE "public"."seq_socket_id"
  INCREMENT 1
  MINVALUE 1
@@ -51,7 +48,6 @@ CREATE SEQUENCE "public"."seq_socket_id"
 -- ----------------------------
 -- Table structure for tm_game
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_game";
 CREATE TABLE "public"."tm_game" (
 "id" int8 NOT NULL,
 "game_type" int4 DEFAULT 0 NOT NULL,
@@ -78,7 +74,6 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_online_record
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_online_record";
 CREATE TABLE "public"."tm_online_record" (
 "socket_id" int8 NOT NULL,
 "device_type" int4 NOT NULL,
@@ -97,7 +92,6 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_play_cards
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_play_cards";
 CREATE TABLE "public"."tm_play_cards" (
 "id" int8 NOT NULL,
 "game_id" int8 NOT NULL,
@@ -114,7 +108,6 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_room
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_room";
 CREATE TABLE "public"."tm_room" (
 "id" int8 NOT NULL,
 "name" varchar(64) COLLATE "default" DEFAULT ''::character varying NOT NULL,
@@ -133,7 +126,6 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_room_config
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_room_config";
 CREATE TABLE "public"."tm_room_config" (
 "game_type" int4 NOT NULL,
 "device_type" int4 NOT NULL,
@@ -151,7 +143,6 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_seat
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_seat";
 CREATE TABLE "public"."tm_seat" (
 "id" int8 NOT NULL,
 "trace_id" varchar(32) COLLATE "default" NOT NULL,
@@ -183,7 +174,6 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_table
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_table";
 CREATE TABLE "public"."tm_table" (
 "id" int8 NOT NULL,
 "name" varchar(64) COLLATE "default" DEFAULT ''::character varying NOT NULL,

@@ -18,7 +18,6 @@ Date: 2017-02-17 02:37:28
 -- ----------------------------
 -- Sequence structure for seq_session_id
 -- ----------------------------
-DROP SEQUENCE IF EXISTS "public"."seq_session_id";
 CREATE SEQUENCE "public"."seq_session_id"
  INCREMENT 1
  MINVALUE 1
@@ -29,7 +28,6 @@ CREATE SEQUENCE "public"."seq_session_id"
 -- ----------------------------
 -- Table structure for tm_session
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_session";
 CREATE TABLE "public"."tm_session" (
 "token" varchar(32) COLLATE "default" NOT NULL,
 "client_id" int2 NOT NULL,

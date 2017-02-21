@@ -18,7 +18,6 @@ Date: 2017-02-17 02:36:34
 -- ----------------------------
 -- Table structure for tm_resource
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_resource";
 CREATE TABLE "public"."tm_resource" (
 "id" int8 NOT NULL,
 "type" int2 NOT NULL,
@@ -36,7 +35,6 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_resource_config
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_resource_config";
 CREATE TABLE "public"."tm_resource_config" (
 "id" int4 NOT NULL,
 "lan" varchar(16) COLLATE "default" NOT NULL,

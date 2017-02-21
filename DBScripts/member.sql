@@ -18,7 +18,6 @@ Date: 2017-02-17 02:36:50
 -- ----------------------------
 -- Sequence structure for seq_member_id
 -- ----------------------------
-DROP SEQUENCE IF EXISTS "public"."seq_member_id";
 CREATE SEQUENCE "public"."seq_member_id"
  INCREMENT 1
  MINVALUE 1
@@ -29,7 +28,6 @@ CREATE SEQUENCE "public"."seq_member_id"
 -- ----------------------------
 -- Table structure for tm_member
 -- ----------------------------
-DROP TABLE IF EXISTS "public"."tm_member";
 CREATE TABLE "public"."tm_member" (
 "member_id" int8 NOT NULL,
 "mobile" varchar(11) COLLATE "default" NOT NULL,
