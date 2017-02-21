@@ -1,5 +1,5 @@
 syntax = "proto3";
-option java_package = "com.lawsofnature.sms.domain.mq";
+option java_package = "com.jxjxgo.sms.domain.mq";
 message SmsMessage {
     string traceId = 1;
     int64 ip = 2;

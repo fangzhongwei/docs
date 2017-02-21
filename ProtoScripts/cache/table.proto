@@ -1,5 +1,5 @@
 syntax = "proto3";
-option java_package = "com.lawsofnature.sso.domain.cache.game";
+option java_package = "com.jxjxgo.sso.domain.cache.game";
 message Room {
     string token = 1;
 	int32 clientId = 2;

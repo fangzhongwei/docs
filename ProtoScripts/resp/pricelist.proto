@@ -1,5 +1,5 @@
 syntax = "proto3";
-option java_package = "com.lawsofnature.apigateway.domain.http.resp";
+option java_package = "com.jxjxgo.apigateway.domain.http.resp";
 
 message Price {
 	string code = 1;

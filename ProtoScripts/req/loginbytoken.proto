@@ -1,5 +1,5 @@
 syntax = "proto3";
-option java_package = "com.lawsofnature.apigateway.domain.http.req";
+option java_package = "com.jxjxgo.apigateway.domain.http.req";
 message LoginByTokenReq {
     int32 clientId = 1;
 	string version = 2;

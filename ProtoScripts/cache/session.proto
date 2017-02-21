@@ -1,5 +1,5 @@
 syntax = "proto3";
-option java_package = "com.lawsofnature.sso.domain.cache";
+option java_package = "com.jxjxgo.sso.domain.cache";
 message SessionCache {
     string token = 1;
 	int32 clientId = 2;
