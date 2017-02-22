@@ -11,13 +11,32 @@ Target Server Type    : PGSQL
 Target Server Version : 90601
 File Encoding         : 65001
 
-Date: 2017-02-17 02:37:14
+Date: 2017-02-22 12:09:51
 */
 
 
 -- ----------------------------
+-- Sequence structure for seq_sms_verify_aggregation_id
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."seq_sms_verify_aggregation_id";
+CREATE SEQUENCE "public"."seq_sms_verify_aggregation_id"
+ INCREMENT 1
+ MINVALUE 1
+ MAXVALUE 9223372036854775807;
+
+-- ----------------------------
+-- Sequence structure for seq_sms_verify_record_id
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."seq_sms_verify_record_id";
+CREATE SEQUENCE "public"."seq_sms_verify_record_id"
+ INCREMENT 1
+ MINVALUE 1
+ MAXVALUE 9223372036854775807;
+
+-- ----------------------------
 -- Table structure for tm_sms_verify_aggregation
 -- ----------------------------
+DROP TABLE IF EXISTS "public"."tm_sms_verify_aggregation";
 CREATE TABLE "public"."tm_sms_verify_aggregation" (
 "id" int8 NOT NULL,
 "send_date" varchar(10) COLLATE "default" NOT NULL,
@@ -38,6 +57,7 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_sms_verify_record
 -- ----------------------------
+DROP TABLE IF EXISTS "public"."tm_sms_verify_record";
 CREATE TABLE "public"."tm_sms_verify_record" (
 "id" int8 NOT NULL,
 "member_id" int8 NOT NULL,
@@ -70,6 +90,7 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Table structure for tm_sms_verify_template
 -- ----------------------------
+DROP TABLE IF EXISTS "public"."tm_sms_verify_template";
 CREATE TABLE "public"."tm_sms_verify_template" (
 "sms_type" int4 NOT NULL,
 "min_interval_seconds" int4 NOT NULL,
@@ -87,7 +108,7 @@ WITH (OIDS=FALSE)
 -- ----------------------------
 -- Records of tm_sms_verify_template
 -- ----------------------------
-INSERT INTO "public"."tm_sms_verify_template" VALUES ('1', '60', '%s（登录验证码，10分钟有效） ，您正在手机上登录久新棋牌，若非本人操作请勿理会。', '3', '1', '10', '2017-01-19 15:44:11', '2017-01-19 15:54:57');
+INSERT INTO "public"."tm_sms_verify_template" VALUES ('1', '6000', '%s（登录验证码，10分钟有效） ，您正在手机上登录久新棋牌，若非本人操作请勿理会。', '100', '1', '10', '2017-01-19 15:44:11', '2017-01-19 15:54:57');
 
 -- ----------------------------
 -- Alter Sequences Owned By 

@@ -1,0 +1,22 @@
+git config --global credential.helper cache
+
+git clone https://github.com/fangzhongwei/common-edecrypt.git
+git clone https://github.com/fangzhongwei/common-error.git
+git clone https://github.com/fangzhongwei/common-finagle-thrift.git
+git clone https://github.com/fangzhongwei/common-kafka.git
+git clone https://github.com/fangzhongwei/common-redis.git
+git clone https://github.com/fangzhongwei/common-utils.git
+git clone https://github.com/fangzhongwei/common-db.git
+git clone https://github.com/fangzhongwei/common-cache.git
+
+
+git clone https://github.com/fangzhongwei/membercenter.git
+git clone https://github.com/fangzhongwei/edcenter.git
+git clone https://github.com/fangzhongwei/accountcenter.git
+git clone https://github.com/fangzhongwei/sso.gitvi 
+git clone https://github.com/fangzhongwei/i18n.git
+git clone https://github.com/fangzhongwei/sms.git
+
+
+git clone https://github.com/fangzhongwei/apigateway.git
+git clone https://github.com/fangzhongwei/gamegateway.git
