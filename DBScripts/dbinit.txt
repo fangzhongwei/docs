@@ -32,6 +32,21 @@ GRANT SELECT,INSERT,UPDATE on all tables in schema public to sms;
 \c landlord;
 GRANT SELECT,INSERT,UPDATE on all tables in schema public to landlord;
 
+\c account;
+GRANT SELECT,UPDATE on all sequences in schema public to account;
+\c sso;
+GRANT SELECT,UPDATE on all sequences in schema public to sso;
+\c edcenter;
+GRANT SELECT,UPDATE on all sequences in schema public to edcenter;
+\c i18n;
+GRANT SELECT,UPDATE on all sequences in schema public to i18n;
+\c member;
+GRANT SELECT,UPDATE on all sequences in schema public to member;
+\c sms;
+GRANT SELECT,UPDATE on all sequences in schema public to sms;
+\c landlord;
+GRANT SELECT,UPDATE on all sequences in schema public to landlord;
+
 
 #init tables
 \c account;
@@ -48,3 +63,5 @@ GRANT SELECT,INSERT,UPDATE on all tables in schema public to landlord;
 \i sms.sql;
 \c landlord;
 \i landlord.sql;
+
+psql -U i18n -d i18n
