@@ -25,9 +25,20 @@ struct JoinGameRequest {
     7: i32 baseAmount = 0,
 }
 
+struct TakeLandlordRequest {
+    1: i64 memberId = 0,
+    2: i64 gameId = 0,
+    3: bool take = false,
+}
+
 struct PlayCardsRequest {
     1: i64 memberId = 0,
-    2: string cards = "",
+    2: i64 gameId = 0,
+    3: i32 seqInGame = 0,
+    4: string cardsType = "",
+    5: list<i32> keys,
+    6: list<i32> playPoints,
+    7: list<i32> handPoints,
 }
 
 struct GameBaseResponse {
@@ -51,9 +62,9 @@ struct GameTurnResponse {
     9: i32 previousCardsCount = 0,
     10: string nextNickname = "",
     11: i32 nextCardsCount = 0,
-    12: bool choosingLandlord = false,
+    12: string playStatus = "",
     13: bool landlord = false,
-    14: bool turnToPlay = false,
+    14: i32 seqInGame = 0,
 }
 
 struct CheckGameStatusResponse {
@@ -63,20 +74,12 @@ struct CheckGameStatusResponse {
     4: optional GameTurnResponse turn,
 }
 
-struct PlayCardsResponse {
-    1: string code = "",
-    2: bool isFinished = false,
-    3: i64 memberId0 = 0,
-    4: optional GameTurnResponse turn0,
-    5: i64 memberId2 = 0,
-    6: optional GameTurnResponse turn2,
-}
-
 service GameEndpoint {
     GameBaseResponse playerOnline(1: string traceId, 2: OnlineRequest request),
     GameBaseResponse playerOffline(1: string traceId, 2: i64 socketUuid, 3: i64 memberId),
     GenerateSocketIdResponse generateSocketId(1: string traceId),
     CheckGameStatusResponse checkGameStatus(1: string traceId, 2: CheckGameStatusRequest request),
     GameBaseResponse joinGame(1: string traceId, 2: JoinGameRequest request),
-    PlayCardsResponse playCards(1: string traceId, 2: PlayCardsRequest request),
+    GameBaseResponse takeLandlord(1: string traceId, 2: TakeLandlordRequest request),
+    GameBaseResponse playCards(1: string traceId, 2: PlayCardsRequest request),
 }

@@ -1,0 +1,36 @@
+syntax = "proto3";
+option java_package = "com.jxjxgo.apigateway.domain.http.resp";
+
+message GameTurnResp {
+    int64 gameId = 1;
+    int32 gameType = 2;
+    int32 deviceType = 3;
+    string cards = 4;
+    string landlordCards = 5;
+    int32 baseAmount = 6;
+    int32 multiples = 7;
+    string previousNickname = 8;
+    int32 previousCardsCount = 9;
+    string nextNickname = 10;
+    int32 nextCardsCount = 11;
+    bool choosingLandlord = 12;
+    bool landlord = 13;
+    bool turnToPlay = 14;
+    string ext1 = 15;
+    string ext2 = 16;
+    string ext3 = 17;
+    string ext4 = 18;
+    string ext5 = 19;
+}
+
+message CheckGameStatusResp {
+    string code = 1;
+    int64 memberId = 2;
+    bool reconnect = 3;
+    GameTurnResp turn = 4;
+    string ext1 = 5;
+    string ext2 = 6;
+    string ext3 = 7;
+    string ext4 = 8;
+    string ext5 = 9;
+}

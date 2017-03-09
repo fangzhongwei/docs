@@ -11,4 +11,17 @@ message SocketRequest {
     string p7 = 7;
     string p8 = 8;
     string p9 = 9;
+    string p10 = 10;
+    string p11 = 11;
+    string p12 = 12;
+    string p13 = 13;
+    string p14 = 14;
+    string p15 = 15;
+    string p16 = 16;
+    string p17 = 17;
+    string p18 = 18;
+    string p19 = 19;
+    string p20 = 20;
+    string p21 = 21;
+    string p22 = 22;
 }

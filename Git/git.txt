@@ -16,6 +16,7 @@ git clone https://github.com/fangzhongwei/accountcenter.git
 git clone https://github.com/fangzhongwei/sso.gitvi 
 git clone https://github.com/fangzhongwei/i18n.git
 git clone https://github.com/fangzhongwei/sms.git
+git clone https://github.com/fangzhongwei/gamecenter.git
 
 
 git clone https://github.com/fangzhongwei/apigateway.git
