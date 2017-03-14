@@ -1,4 +1,4 @@
-cd /root/projects/rpc_servers/sso
-git pull
-sbt "project ssoserver" "run"
+sudo cd /home/ec2-user/projects/internal/sso
+sudo git pull
+sudo sbt "project ssoserver" "run"
 

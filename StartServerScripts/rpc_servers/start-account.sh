@@ -1,4 +1,4 @@
-cd /root/projects/rpc_servers/accountcenter
-git pull
-sbt "project accountserver" "run"
+sudo cd /home/ec2-user/projects/internal/accountcenter
+sudo git pull
+sudo sbt "project accountserver" "run"
 

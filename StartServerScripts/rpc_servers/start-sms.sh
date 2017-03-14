@@ -1,4 +1,4 @@
-cd /root/projects/rpc_servers/sms
-git pull
-sbt "project smsserver" "run"
+sudo cd /home/ec2-user/projects/internal/sms
+sudo git pull
+sudo sbt "project smsserver" "run"
 

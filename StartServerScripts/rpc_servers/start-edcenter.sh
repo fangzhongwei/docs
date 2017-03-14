@@ -1,4 +1,4 @@
-cd /root/projects/rpc_servers/edcenter
-git pull
-sbt "project edserver" "run"
+sudo cd /home/ec2-user/projects/internal/edcenter
+sudo git pull
+sudo sbt "project edserver" "run"
 

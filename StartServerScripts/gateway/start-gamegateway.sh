@@ -1,4 +1,4 @@
-cd /root/projects/gateway/gamegateway
-git pull
-sbt "project gamegateway" "run"
+sudo cd /home/ec2-user/projects/gateway/gamegateway
+sudo git pull
+sudo sbt "project gamegateway" "run"
 

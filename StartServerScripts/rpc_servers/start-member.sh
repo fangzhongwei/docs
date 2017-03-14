@@ -1,4 +1,4 @@
-cd /root/projects/rpc_servers/membercenter
-git pull
-sbt "project memberserver" "run"
+sudo cd /home/ec2-user/projects/internal/membercenter
+sudo git pull
+sudo sbt "project memberserver" "run"
 
