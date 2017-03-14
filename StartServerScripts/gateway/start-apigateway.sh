@@ -1,4 +1,4 @@
-sudo cd /home/ec2-user/projects/gateway/apigateway
-sudo git pull
-sudo sbt "project apigateway" "run"
+cd /home/ec2-user/projects/gateway/apigateway
+git pull
+sbt "project apigateway" "run"
 

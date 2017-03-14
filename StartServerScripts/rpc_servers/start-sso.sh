@@ -1,4 +1,4 @@
-sudo cd /home/ec2-user/projects/internal/sso
-sudo git pull
-sudo sbt "project ssoserver" "run"
+cd /home/ec2-user/projects/internal/sso
+git pull
+sbt "project ssoserver" "run"
 
