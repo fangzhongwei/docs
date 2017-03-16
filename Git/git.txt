@@ -13,7 +13,7 @@ git clone https://github.com/fangzhongwei/common-cache.git
 git clone https://github.com/fangzhongwei/membercenter.git
 git clone https://github.com/fangzhongwei/edcenter.git
 git clone https://github.com/fangzhongwei/accountcenter.git
-git clone https://github.com/fangzhongwei/sso.gitvi 
+git clone https://github.com/fangzhongwei/sso.git
 git clone https://github.com/fangzhongwei/i18n.git
 git clone https://github.com/fangzhongwei/sms.git
 git clone https://github.com/fangzhongwei/gamecenter.git

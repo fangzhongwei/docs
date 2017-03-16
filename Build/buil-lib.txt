@@ -1,0 +1,24 @@
+cd /home/ec2-user/projects/internal/edcenter
+sbt "project edclient" "publishLocal"
+
+cd /home/ec2-user/projects/internal/gamecenter
+sbt "project gamecommonlib" "publishLocal"
+
+cd /home/ec2-user/projects/internal/gamecenter
+sbt "project gamegatewaycommonlib" "publishLocal"
+
+
+cd /home/ec2-user/projects/internal/i18n
+sbt "project i18ncommonlib" "publishLocal"
+
+
+cd /home/ec2-user/projects/internal/membercenter
+sbt "project membercommonlib" "publishLocal"
+
+
+cd /home/ec2-user/projects/internal/sms
+sbt "project smscommonlib" "publishLocal"
+
+cd /home/ec2-user/projects/internal/sso
+sbt "project ssocommonlib" "publishLocal"
+
