@@ -1,0 +1,20 @@
+syntax = "proto3";
+option java_package = "com.jxjxgo.casino.apigateway.domain.http.req";
+
+message ClientTraceReq {
+    string traceId = 1;
+    bool normal = 2;
+    string errorDesc = 3;
+    int32 networkType = 4;
+    int32 traceType = 5;
+    int32 api_id = 6;
+    int32 http_status_code = 7;
+    string socket_action = 8;
+    int32 cost = 9;
+    int32 ping = 10;
+    string client_gmt_create = 11;
+}
+
+message ClientTraceListReq {
+    repeated ClientTraceReq req = 1;
+}

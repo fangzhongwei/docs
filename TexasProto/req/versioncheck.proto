@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "com.jxjxgo.casino.apigateway.domain.http.req";
+
+message CheckVersionReq {
+    int32 clientId = 1;
+    int32 releaseNo = 2;
+    string clientVersion = 3;
+    string ext1 = 4;
+    string ext2 = 5;
+    string ext3 = 6;
+    string ext4 = 7;
+    string ext5 = 8;
+}

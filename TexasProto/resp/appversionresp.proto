@@ -1,0 +1,18 @@
+syntax = "proto3";
+option java_package = "com.jxjxgo.casino.apigateway.domain.http.resp";
+
+message AppVersionResp {
+    string code = 1;
+    int32 clientId = 2;
+    int32 releaseNo = 3;
+    string clientVersion = 4;
+    string url = 5;
+    bool currentRelease = 6;
+    bool forceUpgrade = 7;
+    string releaseNote = 8;
+    string ext1 = 9;
+    string ext2 = 10;
+    string ext3 = 11;
+    string ext4 = 12;
+    string ext5 = 13;
+}

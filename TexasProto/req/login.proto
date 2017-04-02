@@ -1,0 +1,36 @@
+syntax = "proto3";
+option java_package = "com.jxjxgo.moon_texas_holdem.apigateway.domain.http.req";
+
+message ClientThirdPartProfile {
+    string platform = 1;
+    string thirdId = 2;
+    string thridUnderage = 3;
+    string thirdUsername = 4;
+    string ext1 = 5;
+    string ext2 = 6;
+    string ext3 = 7;
+}
+
+message ClientSystemInfo {
+    string deviceUniqueIdentifier = 1;
+    string deviceModel = 2;
+    string deviceName = 3;
+    string deviceType = 4;
+    string operatingSystem = 5;
+    string operatingSystemFamily = 6;
+    string ext1 = 7;
+    string ext2 = 8;
+    string ext3 = 9;
+}
+
+message LoginReq {
+    int32 clientId = 1;
+    string clientVersion = 2;
+    ClientThirdPartProfile profile = 3;
+    ClientSystemInfo systemInfo = 4;
+    string ext1 = 5;
+    string ext2 = 6;
+    string ext3 = 7;
+    string ext4 = 8;
+    string ext5 = 9;
+}
