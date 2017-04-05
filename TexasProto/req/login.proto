@@ -1,14 +1,16 @@
 syntax = "proto3";
-option java_package = "com.jxjxgo.moon_texas_holdem.apigateway.domain.http.req";
+option java_package = "com.jxjxgo.casino.apigateway.domain.http.req";
 
 message ClientThirdPartProfile {
-    string platform = 1;
-    string thirdId = 2;
-    string thridUnderage = 3;
-    string thirdUsername = 4;
-    string ext1 = 5;
-    string ext2 = 6;
-    string ext3 = 7;
+    int32 platform = 1;
+    string id = 2;
+    string name = 3;
+    string alias = 4;
+    string avatarUrl = 5;
+    string avatarMd5 = 6;
+    string ext1 = 7;
+    string ext2 = 8;
+    string ext3 = 9;
 }
 
 message ClientSystemInfo {
